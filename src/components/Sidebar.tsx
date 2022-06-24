@@ -26,8 +26,6 @@ interface GetLessionQueryResponse {
 export function SideBar() {
   const { data } = useQuery<GetLessionQueryResponse>(GET_LESSION_QUERY)
 
-
-
   return (
     <aside className="w-[348px] p-6 bg-gray-700 border-1 border-gray-600">
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
@@ -38,6 +36,7 @@ export function SideBar() {
         { data?.lessons.map(lesson => {
           return (
             <LessonsCard 
+              key={lesson.id}
               title={lesson.title}
               slug={lesson.slug}
               availableAt={new Date(lesson.availableAt)}
