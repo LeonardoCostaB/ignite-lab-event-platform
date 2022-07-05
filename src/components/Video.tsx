@@ -39,7 +39,7 @@ export function Video({ lessionSlug }: VideoProps) {
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto sm:px-4">
-        <div className="flex items-start gap-16 sm:flex flex-col sm:gap-6">
+        <div className="flex items-start gap-16 sm:flex sm:flex-col sm:gap-6">
           <div className="flex-1">
             <h1 className="text-2xl font-bold sm:text-lg">
               { data.lesson.title }
@@ -70,7 +70,7 @@ export function Video({ lessionSlug }: VideoProps) {
             ) }
           </div>
           
-          <div className="flex flex-col gap-4 sm:max-w-full w-full">
+          <div className="flex flex-col gap-4 sm:max-w-full sm:w-full">
             <Button 
               variant="green"
               link="#"
@@ -98,7 +98,7 @@ export function Video({ lessionSlug }: VideoProps) {
               <FileArrowDown size={40} />
             </div>
 
-            <div className="py-6 leading-relaxed xs:text-center px-4">
+            <div className="py-6 leading-relaxed xs:text-center xs:px-4">
               <strong className="text-2xl sm:text-lg">Material Complementar</strong>
 
               <p className="text-sm text-gray-200 mt-2 sm:text-xs">

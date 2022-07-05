@@ -15,7 +15,7 @@ export function Footer({ border }: IFooterProps) {
           })
         }
       >
-        <div className="flex items-center gap-6 sm:flex-col gap-4">
+        <div className="flex items-center gap-6 sm:flex-col sm:gap-4">
           <a
             href="https://www.rocketseat.com.br"
             target="_blank"

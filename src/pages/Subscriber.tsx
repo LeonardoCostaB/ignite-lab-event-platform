@@ -31,20 +31,20 @@ export function Subscribe() {
   return (
     <>
       <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-        <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto sm:flex-col gap-6">
-          <div className="max-w-[640px] sm:flex flex-col items-center px-4">
+        <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto sm:flex-col sm:gap-6">
+          <div className="max-w-[640px] sm:flex sm:flex-col sm:items-center sm:px-4">
             <Logo />
 
-            <h1 className="mt-8 text-[2.5rem] leading-tight sm:text-center text-[1.5rem]">
+            <h1 className="mt-8 text-[2.5rem] leading-tight sm:text-center sm:text-[1.5rem]">
               Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
             </h1>
 
-            <p className="mt-4 text-gray-200 leading-relaxed sm:text-center text-sm">
+            <p className="mt-4 text-gray-200 leading-relaxed sm:text-center sm:text-sm">
               Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
             </p>
           </div>
 
-          <div className="p-8 bg-gray-700 border border-gray-500 rounded sm:w-full xs:py-8 px-4">
+          <div className="p-8 bg-gray-700 border border-gray-500 rounded sm:w-full xs:py-8 xs:px-4">
             <strong className="text-2xl mb-6 block sm:text-lg">
               Inscreva-se gratuitamente
             </strong>

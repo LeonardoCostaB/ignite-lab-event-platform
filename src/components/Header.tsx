@@ -18,10 +18,10 @@ export function Header() {
   }, [isOpenMenu])
 
   return (
-    <header className="w-full py-5 flex items-center justify-center bg-gray-700 border-b border-gray-600 sm:justify-between px-4">
+    <header className="w-full py-5 flex items-center justify-center bg-gray-700 border-b border-gray-600 sm:justify-between sm:px-4">
       <Logo />
 
-      <div className="flex items-center gap-2">
+      <div className="hidden items-center gap-2 sm:flex">
         <span className="text-gray-100 text-sm">
           Aulas
         </span>
@@ -47,7 +47,7 @@ export function Header() {
 
       { isOpenMenu && (
         <SideBar 
-          propsClassElement="w-[348px] p-6 bg-gray-700 border-1 border-gray-600 sm:fixed top-[11.9%] left-0 sm:w-full h-full z-10"
+          propsClassElement="w-[348px] p-6 bg-gray-700 border-1 border-gray-600 sm:fixed sm:top-[11.9%] sm:left-0 sm:w-full sm:h-full sm:z-10"
         />
       )}
     </header>
