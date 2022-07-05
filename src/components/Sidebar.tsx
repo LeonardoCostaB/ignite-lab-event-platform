@@ -1,11 +1,15 @@
 import { useGetLessonQuery } from '../graphql/generated';
 import { LessonsCard } from "./LessonsCard";
 
-export function SideBar() {
+interface ISideBarProps {
+  propsClassElement: string
+}
+
+export function SideBar({ propsClassElement }: ISideBarProps) {
   const { data } = useGetLessonQuery()
 
   return (
-    <aside className="w-[348px] p-6 bg-gray-700 border-1 border-gray-600">
+    <aside className={propsClassElement}>
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
         Cronograma de aulas
       </span>
@@ -27,3 +31,5 @@ export function SideBar() {
     </aside>
   )
 }
+
+// 
