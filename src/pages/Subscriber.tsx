@@ -1,9 +1,11 @@
 import { FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom"
-;
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 import { Footer } from "../components/Footer";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import { setUser } from "../store/module/users";
 
 import codeMockupImgUrl from '../assets/code-mockup.png';
 
@@ -13,10 +15,18 @@ export function Subscribe() {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
 
-  const [ createSubscriber, { loading } ] = useCreateSubscriberMutation()
+  const [ createSubscriber, { loading } ] = useCreateSubscriberMutation();
+  const dispatch = useDispatch();
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault()
+
+    dispatch(
+      setUser({
+        name,
+        email
+      })
+    )
 
     await createSubscriber({
       variables: {

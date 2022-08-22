@@ -47,7 +47,7 @@ export function Header() {
 
       { isOpenMenu && (
         <SideBar 
-          propsClassElement="w-[348px] p-6 bg-gray-700 border-1 border-gray-600 sm:fixed sm:top-[11.9%] sm:left-0 sm:w-full sm:h-full sm:z-10"
+          propsClassElement="w-[348px] p-6 bg-gray-700 border-1 border-gray-600 sm:fixed sm:top-[11.9%] sm:left-0 sm:w-full sm:h-full sm:z-[60]"
         />
       )}
     </header>

@@ -89,7 +89,7 @@ export function Video({ lessionSlug }: VideoProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 mt-20 pb-20 sm:grid-cols-1 pb-16 sm:mt-16">
+        <div className="grid grid-cols-2 gap-8 mt-20 pb-20 sm:grid-cols-1 sm:pb-16 sm:mt-16">
           <a 
             href="" 
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors sm:gap-4 xs:gap-0 xs:flex-col"
